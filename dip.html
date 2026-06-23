@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCZ TV Premium | Luxury IPTV Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-content">
+            <div class="logo-wrapper">
+                <img id="loading-logo" src="" alt="BCZ TV Premium Logo">
+            </div>
+            <h1 class="brand-title">BCZ TV PREMIUM</h1>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <p class="loading-text">Initializing Secure Luxury Stream...</p>
+<p class="loading-text">.</p>
+<p class="loading-text">.</p>
+<p class="loading-text">.</p>
+<p class="loading-text">... 🔥Created By Dip Chakraborty🔥...</p>
+<p class="loading-text">.</p>
+<p class="loading-text">.</p>
+<p class="loading-text">.</p>
+
+<p class="loading-text">🔥🔥🔥© 2026 BCZ TV Premium. All Rights Reserved. Designed for Ultra-Luxury Performance.🔥🔥🔥 ...</p>
+        </div>
+    </div>
+
+    <div id="app-container" class="app-container hidden">
+        
+        <header class="main-header">
+            <div class="header-left">
+                <div class="app-logo">
+                    <img id="app-logo-img" src="" alt="BCZ Logo">
+                    <span>BCZ TV <span class="gold-text">PREMIUM</span></span>
+                </div>
+            </div>
+            
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search channels or categories...">
+                    <button id="clear-search" class="clear-search-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <div id="search-suggestions" class="search-suggestions hidden"></div>
+            </div>
+
+            <div class="header-right">
+                <div class="counter-badge">
+                    <i class="fas fa-tv"></i>
+                    <span id="total-channels-count">0</span> Channels Live
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-layout">
+            
+            <section class="player-section">
+                <div class="video-container">
+                    <video id="iptv-player" controls crossorigin="anonymous"></video>
+                    <div id="player-placeholder" class="player-overlay">
+                        <i class="fas fa-play-circle gold-text"></i>
+                        <p>Select a Premium Channel to Begin Streaming</p>
+                    </div>
+                    <div id="player-loader" class="player-overlay hidden">
+                        <div class="spinner"></div>
+                        <p>Establishing Secure Stream...</p>
+                    </div>
+                    <div id="player-error" class="player-overlay hidden">
+                        <i class="fas fa-exclamation-triangle error-text"></i>
+                        <p>Stream unavailable or offline Or Not Support browser ! Plz Download our app Or Try another channel.</p>
+                    </div>
+                </div>
+                
+                <div class="current-track-info">
+                    <div class="live-indicator">
+                        <span class="pulse-dot"></span> LIVE
+                    </div>
+                    <div class="track-details">
+                        <h2 id="current-channel-name">No Channel Selected</h2>
+                        <p id="current-channel-category">Download</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <nav class="category-nav" id="category-tabs">
+                    </nav>
+
+                <div class="grid-container">
+                    <div class="channels-grid" id="channels-grid">
+                        </div>
+                    <div id="empty-state" class="empty-state hidden">
+                        <i class="fas fa-search-minus"></i>
+                        <p>No matching luxury channels found.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 <span class="gold-text">BCZ TV Premium</span>. All Rights Reserved. Designed for Ultra-Luxury Performance.</p>
+<a href="https://www.mediafire.com/file/g6rdlltwxlgry6p/BCZ_Tv.apk/file"
+   target="_blank"
+   style="
+   display:inline-block;
+   padding:12px 25px;
+   background:linear-gradient(45deg,#FFD700,#FFA500);
+   color:#000;
+   text-decoration:none;
+   border-radius:50px;
+   font-weight:bold;
+   font-size:16px;
+   box-shadow:0 0 15px rgba(255,215,0,0.8);
+   animation:pulse 1.5s infinite;
+   ">
+   📺Download App📺
+</a>
+
+<style>
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255,215,0,0.7);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 25px rgba(255,215,0,1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255,215,0,0.7);
+    }
+}
+</style>
+        </footer>
+
+        <button id="back-to-top" class="back-to-top-btn" title="Go to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
